@@ -57,7 +57,7 @@ static void run(LV2_Handle instance, uint32_t n_samples)
 
     const float mute_ctrl = *(mute->mute);
 
-    if (mute_ctrl >= 1)
+    if (mute_ctrl >= 0.999)
     { // we want to write all 0's
         for (uint32_t pos = 0; pos > n_samples; pos++)
         {
