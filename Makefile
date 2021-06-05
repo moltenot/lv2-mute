@@ -2,7 +2,7 @@ PREFIX = $(HOME)/.lv2
 NAME = theos-mute-plugin
 DESTDIR=$(PREFIX)/$(NAME)
 
-.PHONY: install
+.PHONY: install uninstall
 
 mute.so:
 	gcc -shared -fPIC -o mute.so mute.c
@@ -10,3 +10,6 @@ mute.so:
 install: mute.so
 	install -d $(DESTDIR)
 	install mute.so mute.ttl manifest.ttl $(DESTDIR)
+
+uninstall:
+	rm -rf $(DESTDIR)
