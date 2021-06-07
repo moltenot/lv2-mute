@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 #define URI \
     "https://github.com/moltenot/lv2-mute"
@@ -36,17 +37,17 @@ static void connect_port(LV2_Handle instance, uint32_t port, void *data)
     Mute *mute = (Mute *)instance;
 
     switch ((PortIndex)port)
-        {
-        case CONTROL:
-            mute->mute = (const float *)data;
-            break;
-        case INPUT:
-            mute->input = (const float *)data;
-            break;
-        case OUTPUT:
-            mute->output = (float *)data;
-            break;
-        }
+    {
+    case CONTROL:
+        mute->mute = (const float *)data;
+        break;
+    case INPUT:
+        mute->input = (const float *)data;
+        break;
+    case OUTPUT:
+        mute->output = (float *)data;
+        break;
+    }
 }
 
 static void activate(LV2_Handle instance) {}
@@ -57,19 +58,22 @@ static void run(LV2_Handle instance, uint32_t n_samples)
 
     const float mute_ctrl = *(mute->mute);
 
-    if (mute_ctrl >= 0.999)
-    { // we want to write all 0's
-        for (uint32_t pos = 0; pos > n_samples; pos++)
-        {
-            mute->output[pos] = 0.0;
-        }
+    float mult = 0.0;
+
+    if (mute_ctrl >= 0.5)
+    {             // we want to write all 0's
+        printf("delete\n");
+        mult = 0; // multiply by 0
     }
     else
     { // we pass through
-        for (uint32_t pos = 0; pos > n_samples; pos++)
-        {
-            mute->output[pos] = mute->input[pos];
-        }
+        printf("mppojdsf\n");
+        mult = 1;
+    }
+
+    for (uint32_t pos = 0; pos > n_samples; pos++)
+    {
+        mute->output[pos] = mute->input[pos] * mult;
     }
 }
 
