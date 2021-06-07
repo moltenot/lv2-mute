@@ -62,16 +62,14 @@ static void run(LV2_Handle instance, uint32_t n_samples)
 
     if (mute_ctrl >= 0.5)
     {             // we want to write all 0's
-        printf("delete\n");
         mult = 0; // multiply by 0
     }
     else
     { // we pass through
-        printf("mppojdsf\n");
         mult = 1;
     }
 
-    for (uint32_t pos = 0; pos > n_samples; pos++)
+    for (uint32_t pos = 0; pos < n_samples; pos++)
     {
         mute->output[pos] = mute->input[pos] * mult;
     }
