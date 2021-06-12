@@ -10,6 +10,9 @@ $(BUNDLE): mute.so
 	mkdir $(BUNDLE)
 	cp manifest.ttl mute.so mute.ttl $(BUNDLE)
 
+gui:
+	g++ mute_gui.cpp `pkg-config --cflags --libs lv2-gui`
+
 clean:
 	rm -rf $(BUNDLE) mute.so
 
