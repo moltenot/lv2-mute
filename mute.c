@@ -17,9 +17,9 @@ typedef enum
 
 typedef struct
 {
-    const float *mute;
-    const float *input;
-    float *output;
+    const float *mute;  // mute control port
+    const float *input; // input port
+    float *output;      // output port
 } Mute;
 
 static LV2_Handle instantiate(
@@ -57,6 +57,7 @@ static void run(LV2_Handle instance, uint32_t n_samples)
     const Mute *mute = (const Mute *)instance;
 
     const float mute_ctrl = *(mute->mute);
+    printf("mute control: %f\n", mute_ctrl);
 
     float mult = 0.0;
 

@@ -16,15 +16,10 @@ public:
         mute_button.add_label("mute");
         mute_button.set_size_request(100, 50);
 
-        slot<void> slot = compose(bind(mem_fun(*this, &MuteGUI::write_control), 0),
-                                  compose(mem_fun(*this, &MuteGUI::callback),
-                                          mem_fun(mute_button, &ToggleButton::get_active)));
-        mute_button.signal_toggled().connect(slot);
-        // toggle button reference:
-        // https://developer.gnome.org/gtkmm/stable/classGtk_1_1ToggleButton.html
+        slot<void> slot = compose(bind<0>(mem_fun(*this, &MuteGUI::write_control), 0),
+                                  mem_fun(mute_button, &ToggleButton::get_active));
 
-        // How the nongnu guy does it
-        // http://ll-plugins.nongnu.org/lv2pftci/#A_GUI
+        mute_button.signal_toggled().connect(slot);
 
         mute_button.show();
         add(mute_button);
@@ -33,17 +28,17 @@ public:
     void port_event(uint32_t port, uint32_t buffer_size,
                     uint32_t format, void const *buffer)
     {
-        printf("por:%d buf size:%d format:%d buffer: %s\n", port, buffer_size, format, &buffer);
+        const float *bufvalue = static_cast<const float *>(buffer);
+        bool value = static_cast<bool>(*bufvalue); // cast to a boolean
+        mute_button.set_active(value);
+        printf("PORT EVENT\n");
+        printf("port:%d buf size:%d format:%d buffer pointer: %#x\n value: %d\n",
+               port, buffer_size, format, buffer, value);
+        printf("\n");
     }
 
 protected:
     Gtk::ToggleButton mute_button;
-
-    bool callback(bool state)
-    {
-        std::cout << state << std::endl;
-        return static_cast<float>(state);
-    }
 };
 
 static int _ = MuteGUI::register_class("https://github.com/moltenot/lv2-mute/wiki");
