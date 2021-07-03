@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="79.181313mm"
+   height="5.438879mm"
+   viewBox="0 0 79.181312 5.438879"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="theos dsp plugins logo image.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+  <defs
+     id="defs2">
+    <rect
+       x="41.456505"
+       y="44.688107"
+       width="118.17774"
+       height="36.151581"
+       id="rect26" />
+    <rect
+       x="19.27577"
+       y="18.144051"
+       width="170.86456"
+       height="16.905842"
+       id="rect12" />
+    <rect
+       x="19.27577"
+       y="18.144051"
+       width="170.86456"
+       height="16.905842"
+       id="rect12-6" />
+    <rect
+       x="19.27577"
+       y="18.144051"
+       width="170.86456"
+       height="16.905842"
+       id="rect25" />
+    <rect
+       x="41.456505"
+       y="44.688107"
+       width="118.17774"
+       height="36.151581"
+       id="rect26-5" />
+    <rect
+       x="41.456505"
+       y="44.688107"
+       width="118.17774"
+       height="36.151581"
+       id="rect45" />
+    <rect
+       x="41.456505"
+       y="44.688107"
+       width="118.17774"
+       height="36.151581"
+       id="rect26-5-7" />
+    <rect
+       x="41.456505"
+       y="44.688107"
+       width="118.17774"
+       height="36.151581"
+       id="rect85" />
+    <rect
+       x="41.456505"
+       y="44.688107"
+       width="118.17774"
+       height="36.151581"
+       id="rect176" />
+    <rect
+       x="41.456505"
+       y="44.688107"
+       width="118.17774"
+       height="36.151581"
+       id="rect194" />
+    <font
+       horiz-adv-x="1024"
+       id="font3090"
+       inkscape:label="font 1"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="512"
+       vert-origin-y="768"
+       vert-adv-y="1024">
+      <font-face
+         units-per-em="1024"
+         id="font-face3092"
+         font-family="SVGFont 1" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph3094" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph3096" />
+    </font>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.0961407"
+     inkscape:cx="187.84755"
+     inkscape:cy="46.699668"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1533"
+     inkscape:window-height="991"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:snap-nodes="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-paths="false"
+     inkscape:pagecheckerboard="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid30"
+       originx="-19.592889"
+       originy="-20.090539" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-19.59289,-20.090537)">
+    <text
+       xml:space="preserve"
+       id="text10"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect12);fill:#e6e6e6;fill-opacity:1;stroke:none;"
+       transform="matrix(0.69824927,0,0,0.69824927,5.9121687,6.0623343)"><tspan
+         x="19.275391"
+         y="27.774013"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e6e6e6;fill-opacity:1">THEO'S DSP PLUGINS</tspan></tspan></text>
+    <g
+       id="g2166"
+       transform="matrix(0.99940539,0,0,0.99940539,6.4169027,29.581285)" />
+  </g>
+</svg>
