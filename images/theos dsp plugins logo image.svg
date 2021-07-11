@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="79.181313mm"
+   width="43.821301mm"
    height="5.438879mm"
-   viewBox="0 0 79.181312 5.438879"
+   viewBox="0 0 43.8213 5.438879"
    version="1.1"
    id="svg8"
    sodipodi:docname="theos dsp plugins logo image.svg"
@@ -106,7 +106,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.0961407"
      inkscape:cx="187.84755"
-     inkscape:cy="46.699668"
+     inkscape:cy="46.699667"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -128,7 +128,7 @@
        type="xygrid"
        id="grid30"
        originx="-19.592889"
-       originy="-20.090539" />
+       originy="-20.09054" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -154,7 +154,7 @@
        transform="matrix(0.69824927,0,0,0.69824927,5.9121687,6.0623343)"><tspan
          x="19.275391"
          y="27.774013"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e6e6e6;fill-opacity:1">THEO'S DSP PLUGINS</tspan></tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e6e6e6;fill-opacity:1">THEO'S DSP</tspan></tspan></text>
     <g
        id="g2166"
        transform="matrix(0.99940539,0,0,0.99940539,6.4169027,29.581285)" />

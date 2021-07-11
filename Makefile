@@ -25,6 +25,7 @@ install: uninstall $(BUNDLE)
 
 
 uninstall:
+	rm -rf $(IMAGE_FOLDER)
 	rm -rf $(INSTALLDIR)/$(BUNDLE)
 
 reinstall: uninstall clean install
